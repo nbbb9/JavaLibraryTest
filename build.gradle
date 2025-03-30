@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+jar {
+    archiveBaseName = 'mylibrary'
+    archiveVersion = '1.0.0'
+}
