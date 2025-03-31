@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class nomal {
+
     private static final RspResult rsp = new RspResult();
 
     public void nomalRSP() {
@@ -37,6 +38,7 @@ public class nomal {
         System.out.println("PC의 선택: " + pcChoice);
         System.out.println("사용자의 선택: " + userInput);
 
+        System.out.println("|----------------<결과>---------------|");
         if (result == 1) {
             System.out.println("승리!");
         } else if (result == 2) {

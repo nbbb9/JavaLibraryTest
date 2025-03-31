@@ -3,6 +3,7 @@ package com.libraryTest.library;
 import java.util.Scanner;
 
 public class MyLibrary {
+
     private static final nomal nomal = new nomal(); // 정적 필드로 선언
 
     public static void main(String[] args) {
@@ -15,8 +16,16 @@ public class MyLibrary {
         System.out.println("    2. 묵찌빠");
         System.out.println("    3. 하나 빼기");
 
-        // 입력
-        String input = sc.nextLine();
+        String input;
+
+        while (true) {
+            input = sc.nextLine();
+            if (input.equals("1") || input.equals("2") || input.equals("3")) {
+                break;
+            } else {
+                System.out.println("잘못된 입력입니다. 다시 입력하세요.");
+            }
+        }
 
         System.out.println("|------------------------------|");
 
@@ -26,8 +35,6 @@ public class MyLibrary {
             System.out.println("묵찌빠 실행 (구현 필요)");
         } else if (input.equals("3")) {
             System.out.println("하나 빼기 실행 (구현 필요)");
-        } else {
-            System.out.println("잘못된 입력값입니다.");
         }
 
         sc.close();
