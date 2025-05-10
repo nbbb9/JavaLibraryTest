@@ -3,7 +3,7 @@ package com.libraryTest.library;
 import java.util.Random;
 import java.util.Scanner;
 
-public class nomal {
+public class Nomal {
 
     private static final RspResult rsp = new RspResult();
 
@@ -11,7 +11,7 @@ public class nomal {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
-        System.out.println("|----------------------------------|");
+        System.out.println("|------------------------------|");
         System.out.println("           <일반 가위바위보>");
         System.out.println("'가위' '바위' '보' 중에 하나를 입력하세요");
 
@@ -26,7 +26,7 @@ public class nomal {
             }
         }
 
-        System.out.println("|----------------------------------|");
+        System.out.println("|------------------------------|");
 
         // PC의 선택 (랜덤)
         String[] pcChoices = {"가위", "바위", "보"};
