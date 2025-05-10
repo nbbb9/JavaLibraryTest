@@ -1,10 +1,15 @@
 package com.libraryTest.library;
 
+import com.libraryTest.library.minusOne.MinusOne;
+import com.libraryTest.library.mokzipa.Mokzipa;
+import com.libraryTest.library.nomal.Nomal;
 import java.util.Scanner;
 
 public class MyLibrary {
 
-    private static final nomal nomal = new nomal(); // 정적 필드로 선언
+    private static final Nomal nomal = new Nomal();
+    private static final Mokzipa mokzipa = new Mokzipa();
+    private static final MinusOne minusOne = new MinusOne();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -27,14 +32,12 @@ public class MyLibrary {
             }
         }
 
-        System.out.println("|------------------------------|");
-
         if (input.equals("1")) {
             nomal.nomalRSP();
         } else if (input.equals("2")) {
-            System.out.println("묵찌빠 실행 (구현 필요)");
-        } else if (input.equals("3")) {
-            System.out.println("하나 빼기 실행 (구현 필요)");
+            mokzipa.mokzipaRSP();
+        } else {
+            minusOne.minusOneRSP();
         }
 
         sc.close();
